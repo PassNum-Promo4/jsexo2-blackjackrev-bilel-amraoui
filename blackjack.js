@@ -22,4 +22,20 @@ function result() {
       randomNumber.innerHTML = "Le numéro de votre rival est :" +" " + randomNumberMath;
   }
 
-}
+
+  function resultt() {
+    var randomNumberMath = Math.floor(Math.random() * 21 + 1);
+    var user_input_number = Math.floor(Math.random() * 21 + 1);
+    var resultat = document.getElementById('resultat');
+    var userNumber = document.getElementById('user_number');
+
+
+    else if (user_input_number > randomNumberMath) {
+        resultat.innerHTML = "Vous avez gagner !";
+        userNumber.innerHTML = "Votre numéro est :" + " "+user_input_number;
+        randomNumber.innerHTML = "Le numéro de votre rival est :" +" " + randomNumberMath;
+    }else {
+        resultat.innerHTML = "Vous avez perdu !";
+        userNumber.innerHTML = "Votre numéro est :" + " "+user_input_number;
+        randomNumber.innerHTML = "Le numéro de votre rival est :" +" " + randomNumberMath;
+    }
